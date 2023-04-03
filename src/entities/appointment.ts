@@ -8,15 +8,15 @@ export class Appointment {
     private props: AppointmentProps;
 
     get customer() {
-        return this.customer;
+        return this.props.customer;
     };
 
     get startsAt() {
-        return this.startsAt;
+        return this.props.startsAt;
     };
 
     get endsAt() {
-        return this.endsAt;
+        return this.props.endsAt;
     }
 
     constructor(props: AppointmentProps) {
